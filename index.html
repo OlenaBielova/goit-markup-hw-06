@@ -1,4 +1,4 @@
-u<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -181,7 +181,7 @@ u<!DOCTYPE html>
                                     </a>
                                 </li>
                                 <li class="team-link">
-                                    <a href=""class="team-icon-box">
+                                    <a href="" class="team-icon-box">
                                         <svg class="team-icon">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
@@ -384,11 +384,11 @@ u<!DOCTYPE html>
                 <div class="footer-item">
                     <p>Подпишитесь на рассылку</p>
                     <form class="form-subscribe">
-                        <label for="email">
+                        <label>
                             <input type="email" name="email" class="subscribe-mail-field" placeholder="E-mail">
                         </label>
                         <button type="submit" class="subscribe-button">
-                            <span class="subscribe-text">Подписаться</span>
+                            Подписаться
                             <svg class="subscribe-icon">
                                 <use href="./images/symbol-defs.svg#icon-iconsend"></use>
                             </svg>
@@ -400,57 +400,49 @@ u<!DOCTYPE html>
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <form class="form" action="">
+                <form class="form">
                     <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
-                    <label class="form-field">Имя
-                    <input class="form-field-input" type="text" name="name" autofocus>
-                        <svg class="form-icon">
-                            <use href="./images/symbol-defs 2.svg#icon-person-black"></use>
+                    <button type="button" class="modal-close-btn" data-modal-close>
+                        <svg class="modal-close-icon">
+                            <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
                         </svg>
+                    </button>
+                        <label class="form-field">Имя
+                        <span class="input-wrap">
+                            <input class="form-field-input" type="text" name="name" autofocus>
+                            <svg class="form-icon">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="form-field">Телефон
+                        <span class="input-wrap">
                         <input class="form-field-input" type="tel" name="tel">
                             <svg class="form-icon">
-                                <use href="./images/symbol-defs 2.svg#icon-phone-black"></use>
+                                <use href="./images/icons.svg#icon-phone-black"></use>
                             </svg>
+                        </span>
                     </label>
                     <label class="form-field">Почта
-                        <input class="form-field-input" type="email" name="email" placeholder=" ">
+                        <span class="input-wrap">
+                            <input class="form-field-input" type="email" name="email" placeholder=" ">
                             <svg class="form-icon">
-                                <use href="./images/symbol-defs 2.svg#icon-email-black"></use>
+                                <use href="./images/icons.svg#icon-email-black"></use>
                             </svg>
+                        </span>
                     </label>
                     <label class="form-field">Комментарий
                         <textarea class="form-text" name="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
                     </label>
-                    
-                    <!-- <label class="form-checkbox">Соглашаюсь с рассылкой и принимаю 
-                        <a class="form-link" href="">Условия договора</a>
-                        <input class="checkbox" type="checkbox" name="checkbox">
-                        <svg class="form-checkbox-icon">
-                            <use href="./images/symbol-defs 2.svg#icon-Checkbox"></use>
-                        </svg>
-                    </label> -->
 
-                    <label class="form-checkbox">Соглашаюсь с рассылкой и принимаю
+                    <input class="check-input visually-hidden" type="checkbox" name="check-input" id="checkbox">
+                    <label for="checkbox" class="form-checkbox">Соглашаюсь с рассылкой и принимаю
                         <a class="form-link" href="">Условия договора</a>
-                        
-                        <input class="check-input" type="checkbox" name="check-input" >
-                        <span class="check-box"></span>
                     </label>
-
-
-
-
-
 
                     <button class="button form-submit-button" type="submit">Отправить</button>
                 </form>
-                <button type="button" class="modal-close-btn" data-modal-close>
-                    <svg class="modal-close-icon">
-                        <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
-                    </svg>
-                </button>
+                
             </div>
         </div>
         <script src="./js/modal.js"></script>
